@@ -1,0 +1,1355 @@
+[
+    {
+        "label": "scrapy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "detail": "scrapy",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "isExtraImport": true,
+        "detail": "scrapy",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "isExtraImport": true,
+        "detail": "scrapy",
+        "documentation": {}
+    },
+    {
+        "label": "signals",
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "isExtraImport": true,
+        "detail": "scrapy",
+        "documentation": {}
+    },
+    {
+        "label": "is_item",
+        "importPath": "itemadapter",
+        "description": "itemadapter",
+        "isExtraImport": true,
+        "detail": "itemadapter",
+        "documentation": {}
+    },
+    {
+        "label": "ItemAdapter",
+        "importPath": "itemadapter",
+        "description": "itemadapter",
+        "isExtraImport": true,
+        "detail": "itemadapter",
+        "documentation": {}
+    },
+    {
+        "label": "ItemAdapter",
+        "importPath": "itemadapter",
+        "description": "itemadapter",
+        "isExtraImport": true,
+        "detail": "itemadapter",
+        "documentation": {}
+    },
+    {
+        "label": "SuppliersSpider",
+        "kind": 6,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "class SuppliersSpider(scrapy.Spider):\n\tname = \"fincaraiz\"\n\tcustom_settings = {\n\t\t'FEEDS': {\n\t\t\t'fincaraiz_rent.csv': {\n\t\t\t\t'format': 'csv',\n\t\t\t\t'encoding': 'utf-8-sig',\n\t\t\t\t'overwrite': True,\n\t\t\t},\n\t\t},",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\tname",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\tname = \"fincaraiz\"\n\tcustom_settings = {\n\t\t'FEEDS': {\n\t\t\t'fincaraiz_rent.csv': {\n\t\t\t\t'format': 'csv',\n\t\t\t\t'encoding': 'utf-8-sig',\n\t\t\t\t'overwrite': True,\n\t\t\t},\n\t\t},\n\t}",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\tcustom_settings",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\tcustom_settings = {\n\t\t'FEEDS': {\n\t\t\t'fincaraiz_rent.csv': {\n\t\t\t\t'format': 'csv',\n\t\t\t\t'encoding': 'utf-8-sig',\n\t\t\t\t'overwrite': True,\n\t\t\t},\n\t\t},\n\t}\n\theaders = {",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\theaders",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\theaders = {\n\t\t'accept': '*/*',\n\t\t'accept-language': 'en-US,en;q=0.9',\n\t\t'content-type': 'application/json',\n\t\t'origin': 'https://www.fincaraiz.com.co',\n\t\t'referer': 'https://www.fincaraiz.com.co/venta',\n\t\t'sec-ch-ua': '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"',\n\t\t'sec-ch-ua-mobile': '?0',\n\t\t'sec-ch-ua-platform': '\"Windows\"',\n\t\t'sec-fetch-dest': 'empty',",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\tstart_urls",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\tstart_urls = ['https://fasteignir.visir.is']\n\tprice_ranges = [\n\t\t{'minPrice': 150000099, 'maxPrice': 200000000},\n\t\t{'minPrice': 0, 'maxPrice': 150000000},\n\t\t# {'minPrice': 30000000, 'maxPrice': 40000000},\n\t\t# Add more price ranges as needed\n\t]\n\tdef parse(self, response):\n\t\tfor price_range in self.price_ranges:\n\t\t\tfor i in range(2, 3):  # Assuming operation_type_id values are 1 and 2",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\tprice_ranges",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\tprice_ranges = [\n\t\t{'minPrice': 150000099, 'maxPrice': 200000000},\n\t\t{'minPrice': 0, 'maxPrice': 150000000},\n\t\t# {'minPrice': 30000000, 'maxPrice': 40000000},\n\t\t# Add more price ranges as needed\n\t]\n\tdef parse(self, response):\n\t\tfor price_range in self.price_ranges:\n\t\t\tfor i in range(2, 3):  # Assuming operation_type_id values are 1 and 2\n\t\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":1,\"order\":2,\"operation_type_id\":{i},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":2,\"source\":10}},\"query\":\"\"}}'",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tdata",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":1,\"order\":2,\"operation_type_id\":{i},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":2,\"source\":10}},\"query\":\"\"}}'\n\t\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\t\tyield Request(\n\t\t\t\t\turl,\n\t\t\t\t\tcallback=self.category_parse,\n\t\t\t\t\tmethod=\"POST\",\n\t\t\t\t\tbody=data,\n\t\t\t\t\theaders=self.headers,\n\t\t\t\t\tmeta={'category_id': i, 'page': 1, 'price_range': price_range}\n\t\t\t\t)",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\turl",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\t\tyield Request(\n\t\t\t\t\turl,\n\t\t\t\t\tcallback=self.category_parse,\n\t\t\t\t\tmethod=\"POST\",\n\t\t\t\t\tbody=data,\n\t\t\t\t\theaders=self.headers,\n\t\t\t\t\tmeta={'category_id': i, 'page': 1, 'price_range': price_range}\n\t\t\t\t)\n\t\t\t\t# break",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcategory_id",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\tcategory_id = response.meta['category_id']\n\t\tpage = int(response.meta['page'])\n\t\tprice_range = response.meta['price_range']\n\t\titems = response.json().get('hits', {}).get('hits', [])\n\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tpage",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\tpage = int(response.meta['page'])\n\t\tprice_range = response.meta['price_range']\n\t\titems = response.json().get('hits', {}).get('hits', [])\n\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tprice_range",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\tprice_range = response.meta['price_range']\n\t\titems = response.json().get('hits', {}).get('hits', [])\n\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\titems",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\titems = response.json().get('hits', {}).get('hits', [])\n\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ttotal",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ttotal_pages",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tlisting",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['title']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tlocations",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['country']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['city']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['state']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tcity",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tstate",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tneighbourhood",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tmain_location",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tmain_location",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['main_location']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tneighbourhood_list",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['neighbourhood']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tfacilities",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tfacilities_list",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['facilities']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['address']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['description']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tprice",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['price']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\ttechnicalSheet",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\t\tfield",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\t\tvalue",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\t\tresults[field]",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['bathrooms']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['bedrooms']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['rooms']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['latitude']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['longitude']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['m2']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),\n\t\t\t\t\t\t'm2': unit.get('m2'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tcommercial_units",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),\n\t\t\t\t\t\t'm2': unit.get('m2'),\n\t\t\t\t\t\t'price': unit.get('price', {}).get('amount', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tnew_data_list",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),\n\t\t\t\t\t\t'm2': unit.get('m2'),\n\t\t\t\t\t\t'price': unit.get('price', {}).get('amount', '')\n\t\t\t\t\t}",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tnew_item",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),\n\t\t\t\t\t\t'm2': unit.get('m2'),\n\t\t\t\t\t\t'price': unit.get('price', {}).get('amount', '')\n\t\t\t\t\t}\n\t\t\t\t\tnew_data_list.append(new_item)\n\t\t\t\tresults['commercial_units'] = new_data_list",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['commercial_units']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['commercial_units'] = new_data_list\n\t\t\t\tresults['property_type'] = listing.get('property_type').get('name')\n\t\t\t\tif category_id == 1:\n\t\t\t\t\tresults['listing'] = 'Sale'\n\t\t\t\tif category_id == 2:\n\t\t\t\t\tresults['listing'] = 'Rent'\n\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['property_type']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['property_type'] = listing.get('property_type').get('name')\n\t\t\t\tif category_id == 1:\n\t\t\t\t\tresults['listing'] = 'Sale'\n\t\t\t\tif category_id == 2:\n\t\t\t\t\tresults['listing'] = 'Rent'\n\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tresults['listing']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\t\tresults['listing'] = 'Sale'\n\t\t\t\tif category_id == 2:\n\t\t\t\t\tresults['listing'] = 'Rent'\n\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass\n\t\tif page < total_pages:\n\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tresults['listing']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\t\tresults['listing'] = 'Rent'\n\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass\n\t\tif page < total_pages:\n\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'\n\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['category_id']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass\n\t\tif page < total_pages:\n\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'\n\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(\n\t\t\t\turl,",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['price_range']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass\n\t\tif page < total_pages:\n\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'\n\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(\n\t\t\t\turl,\n\t\t\t\tcallback=self.category_parse,",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tdata",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'\n\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(\n\t\t\t\turl,\n\t\t\t\tcallback=self.category_parse,\n\t\t\t\tmethod=\"POST\",\n\t\t\t\tbody=data,\n\t\t\t\theaders=self.headers,\n\t\t\t\tmeta={'category_id': category_id, 'page': page + 1, 'price_range': price_range}\n\t\t\t)",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\turl",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "description": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "peekOfCode": "\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(\n\t\t\t\turl,\n\t\t\t\tcallback=self.category_parse,\n\t\t\t\tmethod=\"POST\",\n\t\t\t\tbody=data,\n\t\t\t\theaders=self.headers,\n\t\t\t\tmeta={'category_id': category_id, 'page': page + 1, 'price_range': price_range}\n\t\t\t)",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_rent",
+        "documentation": {}
+    },
+    {
+        "label": "SuppliersSpider",
+        "kind": 6,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "class SuppliersSpider(scrapy.Spider):\n\tname = \"fincaraiz\"\n\tcustom_settings = {\n\t\t'FEEDS': {\n\t\t\t'fincaraiz_sale.csv': {\n\t\t\t\t'format': 'csv',\n\t\t\t\t'encoding': 'utf-8-sig',\n\t\t\t\t'overwrite': True,\n\t\t\t},\n\t\t},",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\tname",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\tname = \"fincaraiz\"\n\tcustom_settings = {\n\t\t'FEEDS': {\n\t\t\t'fincaraiz_sale.csv': {\n\t\t\t\t'format': 'csv',\n\t\t\t\t'encoding': 'utf-8-sig',\n\t\t\t\t'overwrite': True,\n\t\t\t},\n\t\t},\n\t}",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\tcustom_settings",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\tcustom_settings = {\n\t\t'FEEDS': {\n\t\t\t'fincaraiz_sale.csv': {\n\t\t\t\t'format': 'csv',\n\t\t\t\t'encoding': 'utf-8-sig',\n\t\t\t\t'overwrite': True,\n\t\t\t},\n\t\t},\n\t}\n\theaders = {",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\theaders",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\theaders = {\n\t\t'accept': '*/*',\n\t\t'accept-language': 'en-US,en;q=0.9',\n\t\t'content-type': 'application/json',\n\t\t'origin': 'https://www.fincaraiz.com.co',\n\t\t'referer': 'https://www.fincaraiz.com.co/venta',\n\t\t'sec-ch-ua': '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"',\n\t\t'sec-ch-ua-mobile': '?0',\n\t\t'sec-ch-ua-platform': '\"Windows\"',\n\t\t'sec-fetch-dest': 'empty',",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\tstart_urls",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\tstart_urls = ['https://fasteignir.visir.is']\n\tprice_ranges = [\n\t\t{'minPrice': 150000099, 'maxPrice': 200000000},\n\t\t{'minPrice': 0, 'maxPrice': 150000000},\n\t\t# {'minPrice': 30000000, 'maxPrice': 40000000},\n\t\t# Add more price ranges as needed\n\t]\n\tdef parse(self, response):\n\t\tfor price_range in self.price_ranges:\n\t\t\tfor i in range(1, 2):  # Assuming operation_type_id values are 1 and 2",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\tprice_ranges",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\tprice_ranges = [\n\t\t{'minPrice': 150000099, 'maxPrice': 200000000},\n\t\t{'minPrice': 0, 'maxPrice': 150000000},\n\t\t# {'minPrice': 30000000, 'maxPrice': 40000000},\n\t\t# Add more price ranges as needed\n\t]\n\tdef parse(self, response):\n\t\tfor price_range in self.price_ranges:\n\t\t\tfor i in range(1, 2):  # Assuming operation_type_id values are 1 and 2\n\t\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":1,\"order\":2,\"operation_type_id\":{i},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":2,\"source\":10}},\"query\":\"\"}}'",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tdata",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":1,\"order\":2,\"operation_type_id\":{i},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":2,\"source\":10}},\"query\":\"\"}}'\n\t\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\t\tyield Request(\n\t\t\t\t\turl,\n\t\t\t\t\tcallback=self.category_parse,\n\t\t\t\t\tmethod=\"POST\",\n\t\t\t\t\tbody=data,\n\t\t\t\t\theaders=self.headers,\n\t\t\t\t\tmeta={'category_id': i, 'page': 1, 'price_range': price_range}\n\t\t\t\t)",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\turl",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\t\tyield Request(\n\t\t\t\t\turl,\n\t\t\t\t\tcallback=self.category_parse,\n\t\t\t\t\tmethod=\"POST\",\n\t\t\t\t\tbody=data,\n\t\t\t\t\theaders=self.headers,\n\t\t\t\t\tmeta={'category_id': i, 'page': 1, 'price_range': price_range}\n\t\t\t\t)\n\t\t\t\t# break",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcategory_id",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\tcategory_id = response.meta['category_id']\n\t\tpage = int(response.meta['page'])\n\t\tprice_range = response.meta['price_range']\n\t\titems = response.json().get('hits', {}).get('hits', [])\n\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tpage",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\tpage = int(response.meta['page'])\n\t\tprice_range = response.meta['price_range']\n\t\titems = response.json().get('hits', {}).get('hits', [])\n\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tprice_range",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\tprice_range = response.meta['price_range']\n\t\titems = response.json().get('hits', {}).get('hits', [])\n\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\titems",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\titems = response.json().get('hits', {}).get('hits', [])\n\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ttotal",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\ttotal = int(response.json().get('hits', {}).get('total').get('value'))\n\t\tprint(total)\n\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ttotal_pages",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\ttotal_pages = int(total / 20) + 1\n\t\tfor item in items:\n\t\t\ttry:\n\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults = {}\n\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tlisting",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tlisting = item.get('_source', {}).get('listing', {})\n\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['title']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['title'] = listing.get('title', '')\n\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tlocations",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tlocations = listing.get('locations', {})\n\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['country']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['country'] = locations.get('country', [{}])[0].get('name', '')\n\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['city']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['city'] = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['state']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['state'] = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tcity",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tcity = locations.get('city', [{}])[0].get('name', '')\n\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tstate",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tstate = locations.get('state', [{}])[0].get('name', '')\n\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tneighbourhood",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tneighbourhood = locations.get('neighbourhood', [])\n\t\t\t\tif neighbourhood:\n\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tmain_location",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\t\tmain_location = neighbourhood[0].get('name', '') + ',' + city + ',' + state\n\t\t\t\telse:\n\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tmain_location",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\t\tmain_location = city + ',' + state\n\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['main_location']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['main_location'] = main_location\n\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tneighbourhood_list",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tneighbourhood_list = ','.join([neigh.get('name', '') for neigh in locations.get('neighbourhood', [])])\n\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['neighbourhood']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['neighbourhood'] = neighbourhood_list\n\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tfacilities",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tfacilities = listing.get('facilities', [])\n\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tfacilities_list",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tfacilities_list = ','.join([facility.get('name', '') or '' for facility in facilities])\n\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['facilities']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['facilities'] = facilities_list\n\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['address']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['address'] = listing.get('address', '')\n\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['description']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['description'] = listing.get('description', '')\n\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tprice",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tprice = listing.get('price', {}).get('amount', '')\n\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['price']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['price'] = price\n\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\ttechnicalSheet",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\ttechnicalSheet = listing.get('technicalSheet', [])\n\t\t\t\tif technicalSheet:\n\t\t\t\t\tfor tech_item in technicalSheet:\n\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\t\tfield",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\t\t\tfield = tech_item.get('field', '')\n\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\t\tvalue",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\t\t\tvalue = tech_item.get('value', '')\n\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\t\tresults[field]",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\t\t\tresults[field] = value\n\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['bathrooms']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['bathrooms'] = listing.get('bathrooms', [''])\n\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['bedrooms']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['bedrooms'] = listing.get('bedrooms', [''])\n\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['rooms']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['rooms'] = listing.get('rooms', [''])\n\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['latitude']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['latitude'] = listing.get('latitude')\n\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['longitude']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['longitude'] = listing.get('longitude')\n\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['m2']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['m2'] = listing.get('m2')\n\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),\n\t\t\t\t\t\t'm2': unit.get('m2'),",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tcommercial_units",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tcommercial_units = listing.get('commercial_units', [])\n\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),\n\t\t\t\t\t\t'm2': unit.get('m2'),\n\t\t\t\t\t\t'price': unit.get('price', {}).get('amount', '')",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tnew_data_list",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tnew_data_list = []\n\t\t\t\tfor unit in commercial_units:\n\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),\n\t\t\t\t\t\t'm2': unit.get('m2'),\n\t\t\t\t\t\t'price': unit.get('price', {}).get('amount', '')\n\t\t\t\t\t}",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tnew_item",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\t\tnew_item = {\n\t\t\t\t\t\t'id': unit.get('id'),\n\t\t\t\t\t\t'title': unit.get('title'),\n\t\t\t\t\t\t'bedrooms': unit.get('bedrooms'),\n\t\t\t\t\t\t'bathrooms': unit.get('bathrooms'),\n\t\t\t\t\t\t'm2': unit.get('m2'),\n\t\t\t\t\t\t'price': unit.get('price', {}).get('amount', '')\n\t\t\t\t\t}\n\t\t\t\t\tnew_data_list.append(new_item)\n\t\t\t\tresults['commercial_units'] = new_data_list",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['commercial_units']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['commercial_units'] = new_data_list\n\t\t\t\tresults['property_type'] = listing.get('property_type').get('name')\n\t\t\t\tif category_id == 1:\n\t\t\t\t\tresults['listing'] = 'Sale'\n\t\t\t\tif category_id == 2:\n\t\t\t\t\tresults['listing'] = 'Rent'\n\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['property_type']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['property_type'] = listing.get('property_type').get('name')\n\t\t\t\tif category_id == 1:\n\t\t\t\t\tresults['listing'] = 'Sale'\n\t\t\t\tif category_id == 2:\n\t\t\t\t\tresults['listing'] = 'Rent'\n\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tresults['listing']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\t\tresults['listing'] = 'Sale'\n\t\t\t\tif category_id == 2:\n\t\t\t\t\tresults['listing'] = 'Rent'\n\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass\n\t\tif page < total_pages:\n\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tresults['listing']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\t\tresults['listing'] = 'Rent'\n\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass\n\t\tif page < total_pages:\n\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'\n\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['category_id']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['category_id'] = category_id\n\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass\n\t\tif page < total_pages:\n\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'\n\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(\n\t\t\t\turl,",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tresults['price_range']",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\t\tresults['price_range'] = price_range\n\t\t\t\tyield results\n\t\t\texcept:\n\t\t\t\tpass\n\t\tif page < total_pages:\n\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'\n\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(\n\t\t\t\turl,\n\t\t\t\tcallback=self.category_parse,",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tdata",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\tdata = f'{{\"variables\":{{\"rows\":21,\"params\":{{\"page\":{page + 1},\"order\":2,\"operation_type_id\":{category_id},\"minPrice\":{price_range[\"minPrice\"]},\"maxPrice\":{price_range[\"maxPrice\"]},\"currencyID\":4,\"m2Currency\":4}},\"page\":{page + 1},\"source\":10}},\"query\":\"\"}}'\n\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(\n\t\t\t\turl,\n\t\t\t\tcallback=self.category_parse,\n\t\t\t\tmethod=\"POST\",\n\t\t\t\tbody=data,\n\t\t\t\theaders=self.headers,\n\t\t\t\tmeta={'category_id': category_id, 'page': page + 1, 'price_range': price_range}\n\t\t\t)",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\turl",
+        "kind": 5,
+        "importPath": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "description": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "peekOfCode": "\t\t\turl = \"https://search-service.fincaraiz.com.co/api/v1/properties/search\"\n\t\t\tyield Request(\n\t\t\t\turl,\n\t\t\t\tcallback=self.category_parse,\n\t\t\t\tmethod=\"POST\",\n\t\t\t\tbody=data,\n\t\t\t\theaders=self.headers,\n\t\t\t\tmeta={'category_id': category_id, 'page': page + 1, 'price_range': price_range}\n\t\t\t)",
+        "detail": "fincaraiz.spiders.fincaraiz_spider_sale",
+        "documentation": {}
+    },
+    {
+        "label": "FincaraizItem",
+        "kind": 6,
+        "importPath": "fincaraiz.items",
+        "description": "fincaraiz.items",
+        "peekOfCode": "class FincaraizItem(scrapy.Item):\n    # define the fields for your item here like:\n    # name = scrapy.Field()\n    pass",
+        "detail": "fincaraiz.items",
+        "documentation": {}
+    },
+    {
+        "label": "FincaraizSpiderMiddleware",
+        "kind": 6,
+        "importPath": "fincaraiz.middlewares",
+        "description": "fincaraiz.middlewares",
+        "peekOfCode": "class FincaraizSpiderMiddleware:\n    # Not all methods need to be defined. If a method is not defined,\n    # scrapy acts as if the spider middleware does not modify the\n    # passed objects.\n    @classmethod\n    def from_crawler(cls, crawler):\n        # This method is used by Scrapy to create your spiders.\n        s = cls()\n        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)\n        return s",
+        "detail": "fincaraiz.middlewares",
+        "documentation": {}
+    },
+    {
+        "label": "FincaraizDownloaderMiddleware",
+        "kind": 6,
+        "importPath": "fincaraiz.middlewares",
+        "description": "fincaraiz.middlewares",
+        "peekOfCode": "class FincaraizDownloaderMiddleware:\n    # Not all methods need to be defined. If a method is not defined,\n    # scrapy acts as if the downloader middleware does not modify the\n    # passed objects.\n    @classmethod\n    def from_crawler(cls, crawler):\n        # This method is used by Scrapy to create your spiders.\n        s = cls()\n        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)\n        return s",
+        "detail": "fincaraiz.middlewares",
+        "documentation": {}
+    },
+    {
+        "label": "FincaraizPipeline",
+        "kind": 6,
+        "importPath": "fincaraiz.pipelines",
+        "description": "fincaraiz.pipelines",
+        "peekOfCode": "class FincaraizPipeline:\n    def process_item(self, item, spider):\n        return item",
+        "detail": "fincaraiz.pipelines",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_NAME",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "BOT_NAME = 'fincaraiz'\nSPIDER_MODULES = ['fincaraiz.spiders']\nNEWSPIDER_MODULE = 'fincaraiz.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'fincaraiz (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SPIDER_MODULES",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "SPIDER_MODULES = ['fincaraiz.spiders']\nNEWSPIDER_MODULE = 'fincaraiz.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'fincaraiz (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NEWSPIDER_MODULE",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "NEWSPIDER_MODULE = 'fincaraiz.spiders'\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = 'fincaraiz (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#USER_AGENT",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#USER_AGENT = 'fincaraiz (+http://www.yourdomain.com)'\n# Obey robots.txt rules\nROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROBOTSTXT_OBEY",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "ROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#DOWNLOAD_DELAY",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS_PER_DOMAIN",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS_PER_IP",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#COOKIES_ENABLED",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#TELNETCONSOLE_ENABLED",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n#SPIDER_MIDDLEWARES = {\n#    'fincaraiz.middlewares.FincaraizSpiderMiddleware': 543,",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#DEFAULT_REQUEST_HEADERS",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#DEFAULT_REQUEST_HEADERS = {\n#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',\n#   'Accept-Language': 'en',\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n#SPIDER_MIDDLEWARES = {\n#    'fincaraiz.middlewares.FincaraizSpiderMiddleware': 543,\n#}\n# Enable or disable downloader middlewares",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#SPIDER_MIDDLEWARES",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#SPIDER_MIDDLEWARES = {\n#    'fincaraiz.middlewares.FincaraizSpiderMiddleware': 543,\n#}\n# Enable or disable downloader middlewares\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html\n#DOWNLOADER_MIDDLEWARES = {\n#    'fincaraiz.middlewares.FincaraizDownloaderMiddleware': 543,\n#}\n# Enable or disable extensions\n# See https://docs.scrapy.org/en/latest/topics/extensions.html",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#DOWNLOADER_MIDDLEWARES",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#DOWNLOADER_MIDDLEWARES = {\n#    'fincaraiz.middlewares.FincaraizDownloaderMiddleware': 543,\n#}\n# Enable or disable extensions\n# See https://docs.scrapy.org/en/latest/topics/extensions.html\n#EXTENSIONS = {\n#    'scrapy.extensions.telnet.TelnetConsole': None,\n#}\n# Configure item pipelines\n# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#EXTENSIONS",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#EXTENSIONS = {\n#    'scrapy.extensions.telnet.TelnetConsole': None,\n#}\n# Configure item pipelines\n# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html\n#ITEM_PIPELINES = {\n#    'fincaraiz.pipelines.FincaraizPipeline': 300,\n#}\n# Enable and configure the AutoThrottle extension (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/autothrottle.html",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#ITEM_PIPELINES",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#ITEM_PIPELINES = {\n#    'fincaraiz.pipelines.FincaraizPipeline': 300,\n#}\n# Enable and configure the AutoThrottle extension (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/autothrottle.html\n#AUTOTHROTTLE_ENABLED = True\n# The initial download delay\n#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_ENABLED",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#AUTOTHROTTLE_ENABLED = True\n# The initial download delay\n#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_START_DELAY",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_MAX_DELAY",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_TARGET_CONCURRENCY",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_DEBUG",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_ENABLED",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_EXPIRATION_SECS",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_DIR",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#HTTPCACHE_DIR = 'httpcache'\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_IGNORE_HTTP_CODES",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_STORAGE",
+        "kind": 5,
+        "importPath": "fincaraiz.settings",
+        "description": "fincaraiz.settings",
+        "peekOfCode": "#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'",
+        "detail": "fincaraiz.settings",
+        "documentation": {}
+    }
+]

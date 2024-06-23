@@ -1,0 +1,37 @@
+[
+    {
+        "label": "scrapy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "detail": "scrapy",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "isExtraImport": true,
+        "detail": "scrapy",
+        "documentation": {}
+    },
+    {
+        "label": "furl",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "furl",
+        "description": "furl",
+        "detail": "furl",
+        "documentation": {}
+    },
+    {
+        "label": "SuppliersSpider",
+        "kind": 6,
+        "importPath": "fincaraiz_spider",
+        "description": "fincaraiz_spider",
+        "peekOfCode": "class SuppliersSpider(scrapy.Spider):\n    name = \"fincaraiz\"\n    custom_settings = {\n        'FEEDS': {\n            'fincaraiz.csv': {\n                'format': 'csv',\n                'encoding': 'utf-8-sig',\n                'overwrite': True,\n            },\n        },",
+        "detail": "fincaraiz_spider",
+        "documentation": {}
+    }
+]
